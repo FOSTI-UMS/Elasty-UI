@@ -1,10 +1,10 @@
 {
-  "name": "palapa-ui-lib",
+  "name": "Palapa UI",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
-  "author": "alfiankan",
+  "description": "Palapa UI Component & Design System",
+  "author": "FOSTI UMS",
   "license": "MIT",
-  "repository": "alfiankan/palapa-ui-lib",
+  "repository": "https://github.com/FOSTI-UMS/Palapa-UI",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -21,12 +21,20 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "live": "npm run build && cd example && npm install && npm run start",
+    "deploy": "gh-pages -d example/build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": "^16.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-links": "^6.1.20",
+    "@storybook/react": "^6.1.20",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
@@ -45,7 +53,7 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^4.0.3"
   },
   "files": [
     "dist"

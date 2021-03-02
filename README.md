@@ -1,30 +1,44 @@
-# palapa-ui-lib
+# Palapa UI Component & Design System
 
-> Made with create-react-library
+## Development Notice
 
-[![NPM](https://img.shields.io/npm/v/palapa-ui-lib.svg)](https://www.npmjs.com/package/palapa-ui-lib) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+- Story Book `npm run storybook`
+- Build `npm run build`
+- Live Preview Component `npm run live`
 
-## Install
+> Make a component inside /src/components/<ComponentName.js>
+> Make a Story book inside /src/components/<ComponentName.stories.js>
 
-```bash
-npm install --save palapa-ui-lib
-```
 
-## Usage
 
-```jsx
-import React, { Component } from 'react'
+## Instalation
 
-import MyComponent from 'palapa-ui-lib'
-import 'palapa-ui-lib/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
+## Build from Source
+
+
+## Example Usage
+
+
+## Questions
+
+
+## Templates
+
+
+## Premium Template
+
+
+## Documentation
+
+## Contributing
+
+
+
+## Version History
 
 ## License
 
-MIT © [alfiankan](https://github.com/alfiankan)
+## Sponsor
+
+## Translation

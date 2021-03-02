@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import { ExampleComponent } from 'palapa-ui-lib'
-import 'palapa-ui-lib/dist/index.css'
-
+import { Button,Badge } from 'palapa-ui-lib';
+import "palapa-ui-lib/dist/index.css";
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return (
+    <div>
+    <h1>Contoh</h1>
+    <Button text="tombol"/>
+    <Badge/>
+    </div>
+  );
+};
 
-export default App
+export default App;
