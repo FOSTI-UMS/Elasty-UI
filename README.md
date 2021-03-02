@@ -32,6 +32,7 @@
 ## Documentation
 
 ## Contributing
+[contributing guide](/CONTRIBUTING.md)
 
 
 
