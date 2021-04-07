@@ -24,7 +24,8 @@
     "live": "npm run build && cd example && npm install && npm run start",
     "deploy": "gh-pages -d example/build",
     "storybook": "tailwind build style/tailwind.css -o style/output.css -c style/tailwind.config.js && start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token 4107b4ee9baa"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -37,6 +38,7 @@
     "@storybook/react": "^6.1.20",
     "@tailwindcss/postcss7-compat": "^2.0.3",
     "babel-eslint": "^10.0.3",
+    "chromatic": "^5.7.1",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.7.0",
