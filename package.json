@@ -24,7 +24,7 @@
     "live": "npm run build && cd example && npm install && npm run start",
     "deploy": "gh-pages -d example/build",
     "storybook": "tailwind build style/tailwind.css -o style/output.css -c style/tailwind.config.js && start-storybook -p 6006",
-    "build-storybook": "tailwind build style/tailwind.css -o style/output.css -c style/tailwind.config.js && build-storybook -o docs-build -s ./stories/assets"
+    "build-storybook": "tailwind build style/tailwind.css -o style/output.css -c style/tailwind.config.js && build-storybook -o docs-build"
   },
   "peerDependencies": {
     "react": "^16.0.0"
