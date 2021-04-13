@@ -23,19 +23,20 @@
     "predeploy": "cd example && npm install && npm run build",
     "live": "npm run build && cd example && npm install && npm run start",
     "deploy": "gh-pages -d example/build",
-    "storybook": "tailwind build style/tailwind.css -o style/output.css -c style/tailwind.config.js && start-storybook -p 6006",
-    "build-storybook": "tailwind build style/tailwind.css -o style/output.css -c style/tailwind.config.js && build-storybook -o docs-build"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o docs-build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
-    "@storybook/addon-actions": "^6.1.20",
-    "@storybook/addon-essentials": "^6.1.20",
-    "@storybook/addon-links": "^6.1.20",
-    "@storybook/react": "^6.1.20",
-    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "@storybook/addon-actions": "^6.2.7",
+    "@storybook/addon-essentials": "^6.2.7",
+    "@storybook/addon-links": "^6.2.7",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.2.7",
     "babel-eslint": "^10.0.3",
     "chromatic": "^5.7.1",
     "cross-env": "^7.0.2",
@@ -52,11 +53,12 @@
     "gh-pages": "^2.2.0",
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.10",
+    "postcss-import": "^14.0.1",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-scripts": "^4.0.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
+    "tailwindcss": "^2.1.1"
   },
   "files": [
     "dist"
