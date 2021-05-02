@@ -8,7 +8,11 @@ module.exports = {
   ],
   theme: {
     colors,
-    extend: {},
+    extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+      }
+    },
   },
   variants: {
     extend: {},
