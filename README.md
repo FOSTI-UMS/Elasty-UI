@@ -1,4 +1,4 @@
-# Palapa UI Component & Design System
+# Elasty UI Component & Design System
 
 ## Development Notice
 
