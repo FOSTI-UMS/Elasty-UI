@@ -1,10 +1,39 @@
 import React from 'react';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import styles from '../../themes';
 
-const Button = ({ text, onClick }) => {
+const Button = ({
+  tag, layout, variant, text, onClick, ...args
+}) => {
+  const Tag = tag;
+
+  const baseStyles = styles.button.base;
+  const layoutStyles = styles.button[layout];
+
+  const baseTheme = layoutStyles.base;
+  const themeStyles = layoutStyles[variant].base;
+
   return (
-    <button className="py-2 px-4 rounded-md bg-gray-800 text-white" onClick={onClick}>
+    <Tag className={classNames(baseStyles, baseTheme, themeStyles)} onClick={onClick} {...args}>
       {text}
-    </button>
+    </Tag>
   );
-}
+};
+
+Button.propTypes = {
+  tag: PropTypes.string,
+  layout: PropTypes.oneOf(['fill', 'outline']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  text: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+};
+
+Button.defaultProps = {
+  tag: 'button',
+  layout: 'fill',
+  variant: 'primary',
+  onClick: () => {},
+};
+
 export default Button;

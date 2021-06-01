@@ -1,9 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-
 import Button from './Button';
 
-export const text = 'Hello Button';
+export default {
+  title: 'Button',
+  component: Button,
+};
 
-storiesOf('Button', module)
-  .add('default', () => <Button text={text} />);
+const Template = (args) => <Button {...args} />;
+export const Component = Template.bind({});
+
+Component.args = {
+  text: 'Hello World',
+};
